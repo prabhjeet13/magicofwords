@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore Blogs</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="style.css">
 
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
@@ -26,6 +26,10 @@
                 <input type="email" placeholder="Email" required>
                 <input type="password" placeholder="Create password">
                 <input type="password" placeholder="Conform Password">
+                <select>
+                    <option value="1">User</option>
+                    <option value="1">Admin</option>
+                </select>
                 <div class="form_control">
                     <!-- <label for="avatar">User Image</label>
                     <input type="file" if="avatar"> -->
