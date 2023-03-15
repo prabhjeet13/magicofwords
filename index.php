@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore Blogs</title>
     
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="/signin.html">
 
 
@@ -20,10 +20,10 @@
         <div class="container nav_container">
             <a href="index.html" class="nav_logo">MAGIC OF WORDS</a>
             <ul class="nav_items">
-                <li> <a href="blog.html">Explore</a></li>
-                <li> <a href="/signin.html">Sign In</a></li>
-                <li> <a href="about.html">About Us</a></li>
-                <li> <a href="contact.html">Contact Us</a></li>
+                <li> <a href="explore.php">Explore</a></li>
+                <li> <a href="login.php">Sign In</a></li>
+                <li> <a href="aboutus.php">About Us</a></li>
+                <li> <a href="contactus.php">Contact Us</a></li>
                 <li class="nav_profile">
 
                     <div class="mw">

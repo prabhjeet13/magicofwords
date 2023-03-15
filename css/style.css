@@ -261,7 +261,7 @@ nav button {
     width:40%;
 }
 
-.alert_message {
+/* .alert_message {
 padding:0.8rem 1.4rem;
 margin-bottom:1rem;
 border-radius:0.5rem;
@@ -277,7 +277,7 @@ border-radius:0.5rem;
     background: hsl(156,100%,38%,15%);
     color: #00c476;;
 
-}
+} */
 
 form{
     display:flex;

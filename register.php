@@ -1,3 +1,34 @@
+<?php
+@include 'connection.php';
+
+session_start(); 
+
+if(isset($_POST['submit'])){
+    $email = mysqli_real_escape_string($conn,$_POST['usermail']);
+    $pass = md5($_POST['password']);
+    $cpass = md5($_POST['cpassword']);
+
+    $select = " SELECT * FROM user_form WHERE email = '$email' && password = '$pass'";
+    
+    $result = mysqli_query($conn, $select);
+    
+    if(mysqli_num_rows($result) > 0){
+        $error[] = 'user already exits';
+    }else {
+            if($pass != $cpass)
+            {
+                $error[] = 'password doesnt match!';
+            }
+            else {
+                $insert = " INSERT INTO user_form(email,password) VALUES ('$email','$pass')";
+                mysqli_query($conn,$insert);
+                header('location:/magicofwords/login.php');
+            }
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +36,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore Blogs</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
 
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
@@ -15,29 +46,21 @@
 <body>
     <section class="form_section-conainer">
         <div class="container form_section-conainer">
+            <form action="" method="post">
             <h2>Register Yourself!</h2>
-            <!-- <div class="alert_message error">
-                <p>This is an error message</p>
-            </div> -->
-                    <form action=""enctype="multipart/form-data">
-                <input type="text" placeholder="First Name" required>
-                <input type="text" placeholder="Last Name" required>
-                <input type="text" placeholder="UserName" required>
-                <input type="email" placeholder="Email" required>
-                <input type="password" placeholder="Create password">
-                <input type="password" placeholder="Conform Password">
-                <select>
-                    <option value="1">User</option>
-                    <option value="1">Admin</option>
-                </select>
-                <div class="form_control">
-                    <!-- <label for="avatar">User Image</label>
-                    <input type="file" if="avatar"> -->
-                     </div>
-                     <button type="submit" class="signupbtn">Sign Up</button>
-                     <small>Already have an account? <a href="Signin.html">Sign In</a></small>
-                    </form>
-
+                <?php
+                    if(isset($error)) {
+                        foreach($error as $error) {
+                            echo '<span style="color:red; font-size:1.0rem;" class="error-msg">'.$error.'</span>';
+                        }
+                    }
+                ?>    
+                <input type="email" name="usermail" placeholder="enter your email" required>
+                <input type="password" name ="password" placeholder="enter your password" required>
+                <input type="password" name="cpassword" placeholder="confirm your password" required>
+                <input type="submit" name="submit" class="signupbtn" value="Register to MW">
+                     <small>Already have an account? <a href="login.php">Log In</a></small>
+            </form>
         </div>
     </section>
 </body>
