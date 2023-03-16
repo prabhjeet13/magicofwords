@@ -17,7 +17,7 @@
 <body>
     <nav>
         <div class="container nav_container">
-            <a href="./afteradminlogin.php" class="nav_logo">MAGIC OF WORDS</a>
+            <a href="../authors/afterUserlogin.php" class="nav_logo">MAGIC OF WORDS</a>
             <ul class="nav_items">
                 <li class="nav_profile">
 
@@ -25,8 +25,8 @@
                         <a href="#" class="btn btn-primary">MW</a>
                     </div>
                     <ul>
-                        <li><a href="./afteradminlogin.php">Dashboard</a></li>
-                        <li><a href="./index.php">Log Out</a></li>
+                        <li><a href="../authors/afterUserlogin.php">Dashboard</a></li>
+                        <li><a href="../index.php">Log Out</a></li>
                     </ul>
                 </li>
             </ul>

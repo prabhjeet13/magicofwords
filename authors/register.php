@@ -22,7 +22,7 @@ if(isset($_POST['submit'])){
             else {
                 $insert = " INSERT INTO user_form(email,password) VALUES ('$email','$pass')";
                 mysqli_query($conn,$insert);
-                header('location:/magicofwords/login.php');
+                header('location:/magicofwords/authors/login.php');
             }
     }
 }

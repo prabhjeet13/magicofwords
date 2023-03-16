@@ -34,43 +34,17 @@
     </nav>
     <section class="form_section-conainer">
         <div class="container form_section-conainer">
-            <h2>Add Post</h2>
+            <h2>Delete Post</h2>
 
                     <form action="" method="post">
-                <input type="text" name=" title" placeholder="Title">
-                <select name="cat">
-                    <option value="1">Nature</option>
-                    <option value="1">Art</option>
-                    <option value="1">Science & Technology</option>
-                    <option value="1">Animal</option>
-                    <option value="1">Journal</option>
-                    <option value="1">Travel</option>
-                </select>
-                <textarea rows="10" placeholder="body"></textarea>
-                    <div class="form_control">
-                        <label for="thumbnail">Add Thumbnail</label>
-                        <input type="file" name="file" if="thumbnail">
-                    </div>
+                     <input type="text" name=" title" placeholder="Title">
+      
                     <input type="email" name="email" placeholder="email" required>    
-                    <button type="submit" class="signupbtn">Add post</button>
+                    <button type="submit" class="signupbtn">Delete post</button>
                     </form>
 
         </div>
     </section>
-    <section class="category_button">
-        <div class="container category_button-container">
-            <a href="" class="category_button">Art</a>
-            <a href="" class="category_button">Nature</a>
-            <a href="" class="category_button">Animal</a>
-            <a href="" class="category_button">Journal</a>
-            <a href="" class="category_button">Travel</a>
-            <a href="" class="category_button">Science & Technology</a>
-        </div>                         
-    </section>
-
-
-    <!-- end category -->
-
     <footer>
         <div class="footer_copyright">
             <small>Copyright &copy;MAGIC OF WORDS</small>

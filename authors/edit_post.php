@@ -17,7 +17,7 @@
 <body>
     <nav>
         <div class="container nav_container">
-            <a href="./afteradminlogin.php" class="nav_logo">MAGIC OF WORDS</a>
+            <a href="../authors/afterUserlogin.php" class="nav_logo">MAGIC OF WORDS</a>
             <ul class="nav_items">
                 <li class="nav_profile">
 
@@ -25,8 +25,8 @@
                         <a href="#" class="btn btn-primary">MW</a>
                     </div>
                     <ul>
-                        <li><a href="./afteradminlogin.php">Dashboard</a></li>
-                        <li><a href="./index.php">Log Out</a></li>
+                        <li><a href="../authors/afterUserlogin.php">Dashboard</a></li>
+                        <li><a href="../index.php">Log Out</a></li>
                     </ul>
                 </li>
             </ul>
@@ -34,7 +34,7 @@
     </nav>
     <section class="form_section-conainer">
         <div class="container form_section-conainer">
-            <h2>Add Post</h2>
+            <h2>Edit Post</h2>
 
                     <form action="" method="post">
                 <input type="text" name=" title" placeholder="Title">
@@ -52,7 +52,7 @@
                         <input type="file" name="file" if="thumbnail">
                     </div>
                     <input type="email" name="email" placeholder="email" required>    
-                    <button type="submit" class="signupbtn">Add post</button>
+                    <button type="submit" class="signupbtn">Edit post</button>
                     </form>
 
         </div>

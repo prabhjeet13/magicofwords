@@ -6,61 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore Blogs</title>
     
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="/signin.html">
+    <link rel="stylesheet" href="./authors/css/style.css">
 
 
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+    section.post {
+    margin-top: 8rem;
+}
+.post_container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5rem;
+    margin-bottom: 5rem;
+} 
+.post_thumbnail{
+    border-radius: 5rem;
+    border: 1rem solid #2c3333;
+    overflow: hidden;
+    margin-bottom: 1.6rem; 
+}
 
+.post_author{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.2rem;
+}
+
+    </style>
 </head>
 <body>
     <nav>
         <div class="container nav_container">
             <a href="index.html" class="nav_logo">MAGIC OF WORDS</a>
             <ul class="nav_items">
-                <li> <a href="explore.php">Explore</a></li>
-                <li> <a href="login.php">Sign In</a></li>
-                <li> <a href="aboutus.php">About Us</a></li>
-                <li> <a href="contactus.php">Contact Us</a></li>
-                <li class="nav_profile">
-
-                    <div class="mw">
-                        <a href="#" class="btn btn-primary">MW</a>
-                    </div>
-                    <ul>
-                        <li><a href="dashboard.html">Dashboard</a></li>
-                        <li><a href="logout.html">Log Out</a></li>
-                    </ul>
-                </li>
+                <li> <a href="./explore.php">Explore</a></li>
+                <li> <a href="./authors/login.php">Sign In</a></li>
+                <li> <a href="./aboutus.php">About Us</a></li>
+                <li> <a href="./contactus.php">Contact Us</a></li>
             </ul>
-            <button id="open_nav-btn"><i class="uil uil-bars"></i></button>
-            <button id="close_nav-btn"><i class="uil uil-multiply"></i></button>
         </div>
     </nav>
     <!-- end nav -->
-
-    <section class="featured">
-        <div class="container featured_container">
-            <div class="post_thumbnail">
-                <img src="/images/wildlife.jpg">
-            </div>
-            <div class="post_info">
-                <a href="" class="category_button">Wild Life</a>
-                <h2 class="post_title"> <a href="post.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum necessitatibus adipisci maiores debitis ut, laborum, culpa perspiciatis dolore praesentium quo unde amet eligendi, eius vero qui? Excepturi, repudiandae. Nemo, odio?</a> </h2>
-                <p class="post_body">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur illo excepturi adipisci maxime distinctio ut iste at nulla. Omnis ipsum voluptatem, magni neque obcaecati explicabo consequatur sapiente vero expedita! Voluptatem.
-                </p>
-                <div class="post_author">
-                    <div class="post_author-info">
-                        <h5>By:Raja Raj</h5>
-                        <small>June 10,2021 - 07-30</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 <!-- --------------------------------------- -->
 
 <section class="post">
@@ -72,7 +61,7 @@
             <div class="post_info">
                 <a href="" class="category_button">Flower</a>
                 <h3 class="post_title">
-                    <a href="post.html"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, fuga inventore ratione, dignissimos odit, nihil possimus molestiae at aliquid rerum enim distinctio labore quo dicta? </a>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, fuga inventore ratione, dignissimos odit, nihil possimus molestiae at aliquid rerum enim distinctio labore quo dicta? 
                 </h3>
                 <p class="post_body"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident unde exercitationem nemo deleniti possimus repellat quibusdam at ullam maxime, quae iure doloremque illo? </p>
                 
@@ -92,7 +81,7 @@
             <div class="post_info">
                 <a href="" class="category_button">Nature</a>
                 <h3 class="post_title">
-                    <a href="post.html"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, fuga inventore ratione, dignissimos odit, nihil possimus molestiae at aliquid rerum enim distinctio labore quo dicta? </a>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, fuga inventore ratione, dignissimos odit, nihil possimus molestiae at aliquid rerum enim distinctio labore quo dicta? 
                 </h3>
                 <p class="post_body"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident unde exercitationem nemo deleniti possimus repellat quibusdam at ullam maxime, quae iure doloremque illo? </p>
                 
@@ -112,7 +101,7 @@
             <div class="post_info">
                 <a href="" class="category_button">Fountain</a>
                 <h3 class="post_title">
-                    <a href="post.html"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, fuga inventore ratione, dignissimos odit, nihil possimus molestiae at aliquid rerum enim distinctio labore quo dicta? </a>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, fuga inventore ratione, dignissimos odit, nihil possimus molestiae at aliquid rerum enim distinctio labore quo dicta? 
                 </h3>
                 <p class="post_body"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident unde exercitationem nemo deleniti possimus repellat quibusdam at ullam maxime, quae iure doloremque illo? </p>
                 
@@ -132,7 +121,7 @@
             <div class="post_info">
                 <a href="" class="category_button">Nature</a>
                 <h3 class="post_title">
-                    <a href="post.html"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, fuga inventore ratione, dignissimos odit, nihil possimus molestiae at aliquid rerum enim distinctio labore quo dicta? </a>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, fuga inventore ratione, dignissimos odit, nihil possimus molestiae at aliquid rerum enim distinctio labore quo dicta? 
                 </h3>
                 <p class="post_body"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident unde exercitationem nemo deleniti possimus repellat quibusdam at ullam maxime, quae iure doloremque illo? </p>
                 
@@ -152,7 +141,7 @@
             <div class="post_info">
                 <a href="" class="category_button">Animal</a>
                 <h3 class="post_title">
-                    <a href="post.html"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, fuga inventore ratione, dignissimos odit, nihil possimus molestiae at aliquid rerum enim distinctio labore quo dicta? </a>
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, fuga inventore ratione, dignissimos odit, nihil possimus molestiae at aliquid rerum enim distinctio labore quo dicta? 
                 </h3>
                 <p class="post_body"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident unde exercitationem nemo deleniti possimus repellat quibusdam at ullam maxime, quae iure doloremque illo? </p>
                 
