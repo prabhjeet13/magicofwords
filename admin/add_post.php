@@ -1,3 +1,13 @@
+<?php
+
+@include './link.php';
+
+$query = "SELECT * from category_info";
+$run = mysqli_query($conn,$query);
+?>
+
+
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,24 +45,38 @@
     <section class="form_section-conainer">
         <div class="container form_section-conainer">
             <h2>Add Post</h2>
-
-                    <form action="" method="post">
-                <input type="text" name=" title" placeholder="Title">
-                <select name="cat">
-                    <option value="1">Nature</option>
-                    <option value="1">Art</option>
-                    <option value="1">Science & Technology</option>
-                    <option value="1">Animal</option>
-                    <option value="1">Journal</option>
-                    <option value="1">Travel</option>
-                </select>
-                <textarea rows="10" placeholder="body"></textarea>
+                <?php 
+                    if(isset($_SESSION['status']) && $_SESSION != ' ')
+                    {
+                        ?>
+                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <strong>Hey!</strong> <?php echo $_SESSION['status']; ?>
+                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                        <?php
+                        unset($_SESSION['status']);
+                    }
+                ?>  
+                <form action="./code.php" method="post" enctype="multipart/form-data">
+                <input type="text" name="title" placeholder="Title">
+                 <select name="cat" required>
+                     <option value = "">Select Category</option>
+                        <?php
+                        while($data = mysqli_fetch_array($run))
+                        {
+                            echo "<option value='$data[1]'>$data[1]</option>";
+                        }
+                        ?>    
+                  </select>
+                   <input type="text" name="body" placeholder="body">
                     <div class="form_control">
                         <label for="thumbnail">Add Thumbnail</label>
-                        <input type="file" name="file" if="thumbnail">
+                        <input type="file" name="postfile" required>
                     </div>
-                    <input type="email" name="email" placeholder="email" required>    
-                    <button type="submit" class="signupbtn">Add post</button>
+                    <input type="email" name="email" placeholder="email" required>
+                    <label for="thumbnail">Date of post</label>
+                    <input type="date" name= "datepost">  
+                    <input type="submit" name="submit" class="signupbtn" value="ADD POST to MW">
                     </form>
 
         </div>

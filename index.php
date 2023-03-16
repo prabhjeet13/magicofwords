@@ -1,3 +1,9 @@
+<?php
+ require_once './admin/link.php';
+ $sql = "SELECT * FROM posts";
+ $all_posts = $conn->query($sql);   
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,13 +19,13 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-    section.post {
+    section.post {   
     margin-top: 8rem;
 }
 .post_container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 5rem;
+    gap: 2rem;
     margin-bottom: 5rem;
 } 
 .post_thumbnail{
@@ -51,112 +57,34 @@
     </nav>
     <!-- end nav -->
 <!-- --------------------------------------- -->
-
-<section class="post">
-    <div class="container post_container">
-        <article class="post">
-            <div class="post_thumbnail">
-                <img src="/images/nature1.jpg" >
-            </div>
-            <div class="post_info">
-                <a href="" class="category_button">Flower</a>
-                <h3 class="post_title">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, fuga inventore ratione, dignissimos odit, nihil possimus molestiae at aliquid rerum enim distinctio labore quo dicta? 
-                </h3>
-                <p class="post_body"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident unde exercitationem nemo deleniti possimus repellat quibusdam at ullam maxime, quae iure doloremque illo? </p>
-                
-                <div class="post_author">
-                    <div class="post_author-info">
-                        <h5>By:Laxmi</h5>
-                        <small>june 13,2032 - 08-40</small>
+ 
+        <section class="post"> 
+            <?php 
+                while($row = mysqli_fetch_assoc($all_posts)) {
+                ?>
+            <div class="container post_container">
+                <article class="post">
+                    <div class="post_thumbnail">
+                        <img src="./admin/upload/<?php echo $row["postimage"]; ?>">
+                    </div>  
+                    <div class="post_info">
+                        <a href="" class="category_button"> <?php echo $row["category"];  ?> </a>
+                        <h3 class="post_title">
+                          <?php echo $row["title"]; ?>  
+                        </h3>
+                        <p class="post_body"> <?php echo $row["body"];  ?> </p>
+                        
+                        <div class="post_author">
+                            <div class="post_author-info">
+                                <h5>By:Prabhjeet</h5>
+                                <small><?php echo $row["date"];  ?></small>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </article>
             </div>
-        </article>
-
-        <article class="post">
-            <div class="post_thumbnail">
-                <img src="/images/nature.jpg" >
-            </div>
-            <div class="post_info">
-                <a href="" class="category_button">Nature</a>
-                <h3 class="post_title">
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, fuga inventore ratione, dignissimos odit, nihil possimus molestiae at aliquid rerum enim distinctio labore quo dicta? 
-                </h3>
-                <p class="post_body"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident unde exercitationem nemo deleniti possimus repellat quibusdam at ullam maxime, quae iure doloremque illo? </p>
-                
-                <div class="post_author">
-                    <div class="post_author-info">
-                        <h5>By:Laxmi</h5>
-                        <small>june 13,2032 - 08-40</small>
-                    </div>
-                </div>
-            </div>
-        </article>
-        
-        <article class="post">
-            <div class="post_thumbnail">
-                <img src="/images/fountain.jpg" >
-            </div>
-            <div class="post_info">
-                <a href="" class="category_button">Fountain</a>
-                <h3 class="post_title">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, fuga inventore ratione, dignissimos odit, nihil possimus molestiae at aliquid rerum enim distinctio labore quo dicta? 
-                </h3>
-                <p class="post_body"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident unde exercitationem nemo deleniti possimus repellat quibusdam at ullam maxime, quae iure doloremque illo? </p>
-                
-                <div class="post_author">
-                    <div class="post_author-info">
-                        <h5>By:Laxmi</h5>
-                        <small>june 13,2032 - 08-40</small>
-                    </div>
-                </div>
-            </div>
-        </article>
-        
-        <article class="post">
-            <div class="post_thumbnail">
-                <img src="/images/nature.jpg" >
-            </div>
-            <div class="post_info">
-                <a href="" class="category_button">Nature</a>
-                <h3 class="post_title">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, fuga inventore ratione, dignissimos odit, nihil possimus molestiae at aliquid rerum enim distinctio labore quo dicta? 
-                </h3>
-                <p class="post_body"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident unde exercitationem nemo deleniti possimus repellat quibusdam at ullam maxime, quae iure doloremque illo? </p>
-                
-                <div class="post_author">
-                    <div class="post_author-info">
-                        <h5>By:Laxmi</h5>
-                        <small>March 13,2032 - 08-40</small>
-                    </div>
-                </div>
-            </div>
-        </article>
-        
-        <article class="post">
-            <div class="post_thumbnail">
-                <img src="/images/animal.jpg" >
-            </div>
-            <div class="post_info">
-                <a href="" class="category_button">Animal</a>
-                <h3 class="post_title">
-                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, fuga inventore ratione, dignissimos odit, nihil possimus molestiae at aliquid rerum enim distinctio labore quo dicta? 
-                </h3>
-                <p class="post_body"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident unde exercitationem nemo deleniti possimus repellat quibusdam at ullam maxime, quae iure doloremque illo? </p>
-                
-                <div class="post_author">
-                    <div class="post_author-info">
-                        <h5>By:Prabhjeet</h5>
-                        <small>November 18,2032 - 12:40</small>
-                    </div>
-                </div>
-            </div>
-        </article>
-
-    </div>
-</section>
-
+            <?php } ?>
+        </section>
 <!-- end post -->
 
     <section class="category_button">

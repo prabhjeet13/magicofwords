@@ -37,7 +37,9 @@
             color: white;
         }
         h2 {
-            margin:10%;
+            margin-left:auto;
+            margin-right: auto;
+            margin-top: 10rem; 
         }     
     </style>
 </head>
@@ -60,7 +62,7 @@
         </div>
     </nav>
 
-    <h2> WELCOME AUTHOR IN THE MAGIC OF WORDS!!! <h2>
+     <h2> WELCOME YOU IN THE MAGIC OF WORDS!!! <h2> 
     <div class="addAndUpdatePost">
         <ul>
             <li> <a href="../authors/add_post.php"> ADD POST </a></li>
