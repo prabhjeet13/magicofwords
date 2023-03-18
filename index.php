@@ -1,6 +1,6 @@
 <?php
  require_once './admin/link.php';
- $sql = "SELECT * FROM posts";
+ $sql = "SELECT * FROM all_posts";
  $all_posts = $conn->query($sql);   
 ?>
 
@@ -76,7 +76,7 @@
                         
                         <div class="post_author">
                             <div class="post_author-info">
-                                <h5>By:Prabhjeet</h5>
+                                <h5>By:<?php echo $row["authorname"];  ?></h5>
                                 <small><?php echo $row["date"];  ?></small>
                             </div>
                         </div>

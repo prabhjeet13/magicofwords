@@ -58,6 +58,7 @@ $run = mysqli_query($conn,$query);
                     }
                 ?>  
                 <form action="./code.php" method="post" enctype="multipart/form-data">
+                <input type="text" name="author" placeholder="Author Name" required>     
                 <input type="text" name="title" placeholder="Title">
                  <select name="cat" required>
                      <option value = "">Select Category</option>
@@ -74,8 +75,9 @@ $run = mysqli_query($conn,$query);
                         <input type="file" name="postfile" required>
                     </div>
                     <input type="email" name="email" placeholder="email" required>
-                    <label for="thumbnail">Date of post</label>
-                    <input type="date" name= "datepost">  
+                    <!-- <label for="thumbnail">Date of post</label>
+                    <input type="date" name= "datepost"> -->
+                    
                     <input type="submit" name="submit" class="signupbtn" value="ADD POST to MW">
                     </form>
 

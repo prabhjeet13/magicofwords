@@ -64,7 +64,7 @@
         </div>
     </nav>
 
-    <h2> WELCOME AUTHOR IN THE MAGIC OF WORDS!!! <h2>
+    <h2> WELCOME TECH TITAN IN THE MAGIC OF WORDS!!! <h2>
     <div class="addAndUpdatePost">
         <ul>
             <li class="signupbtn"> <a href="./add_post.php"> ADD POST </a></li>
