@@ -46,7 +46,7 @@
 <body>
     <nav>
         <div class="container nav_container">
-            <a href="index.html" class="nav_logo">MAGIC OF WORDS</a>
+            <a href="./index.php" class="nav_logo">MAGIC OF WORDS</a>
             <ul class="nav_items">
                 <li> <a href="./explore.php">Explore</a></li>
                 <li> <a href="./authors/login.php">Sign In</a></li>
