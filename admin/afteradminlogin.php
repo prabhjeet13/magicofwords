@@ -141,7 +141,7 @@ signupbtn.sm{
           </a>
         </li>
         <li>
-            <a href="dashboard.html"
+            <a href="./update.php"
               ><i class="uil uil-postcard"></i>
               <h5>Update  Posts</h5>
             </a>

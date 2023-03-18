@@ -1,7 +1,42 @@
+<?php 
+@include './link.php';
+session_start();
+$query ="SELECT * FROM category_info";
+$run = mysqli_query($conn,$query);
+?>
 
+<?php
+@include './link.php';
+session_start();
+if(isset($_POST['edit'])) {
+    $id =$_POST['postid'];
 
+    $que = " UPDATE all_posts SET title='$_POST[title]', category = '$_POST[category]', body ='$_POST[body]' WHERE postid = '$_POST[postid]'";
+    
+    $query_run = mysqli_query($conn,$que);
+    if($query_run) {
+        
+        ?>
+    
+    <script>
+        alert("Successfully Updated");
+        window.location.href='./update.php';
+    </script>
+<?php 
+}
+else {
+    ?>
+    <script>
+        alert("Not Updated");
+        window.location.href='./update.php?error';
+    </script>
+<?php 
+}
+}
 
-
+$result = mysqli_query($conn,"SELECT * FROM all_posts where postid = '".$_GET['postid']."'");
+$row = mysqli_fetch_array($result);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,41 +75,24 @@
         <div class="container form_section-conainer">
             <h2>Edit Post</h2>
 
-                    <form action="" method="post">
-                <input type="text" name=" title" placeholder="Title">
-                <select name="cat">
-                    <option value="1">Nature</option>
-                    <option value="1">Art</option>
-                    <option value="1">Science & Technology</option>
-                    <option value="1">Animal</option>
-                    <option value="1">Journal</option>
-                    <option value="1">Travel</option>
+            <form action="" method="post">
+                <input type="text" name="postid" value="<?php echo $row["postid"];?>">        
+                <input type="text" name="title" value="<?php echo $row["title"];?>">
+                <select name="category">
+                <option value="">Select Category</option>
+                <?php
+                while($data = mysqli_fetch_array($run))
+                {
+                    echo "<option value='$data[1]'>$data[1]</option>";
+                }
+                ?>
                 </select>
-                <textarea rows="10" placeholder="body"></textarea>
-                    <div class="form_control">
-                        <label for="thumbnail">Add Thumbnail</label>
-                        <input type="file" name="file" if="thumbnail">
-                    </div>
-                    <input type="email" name="email" placeholder="email" required>    
-                    <button type="submit" class="signupbtn">Edit post</button>
-                    </form>
-
+                <input type="text" name="body" value="<?php echo $row["body"];?>"> 
+                <input type="submit" name="edit" class="signupbtn" id="edit" value="Edit Post">                    
+                </form>
         </div>
     </section>
-    <section class="category_button">
-        <div class="container category_button-container">
-            <a href="" class="category_button">Art</a>
-            <a href="" class="category_button">Nature</a>
-            <a href="" class="category_button">Animal</a>
-            <a href="" class="category_button">Journal</a>
-            <a href="" class="category_button">Travel</a>
-            <a href="" class="category_button">Science & Technology</a>
-        </div>                         
-    </section>
-
-
-    <!-- end category -->
-
+ 
     <footer>
         <div class="footer_copyright">
             <small>Copyright &copy;MAGIC OF WORDS</small>
