@@ -2,7 +2,7 @@
 
 $username = 'root';
 $password = '';
-$server = 'localhost';
+$server = 'localhost:3308';
 $db = 'magicwords_db';
 
 

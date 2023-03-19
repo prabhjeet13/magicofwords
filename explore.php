@@ -19,51 +19,12 @@ $run = mysqli_query($conn,$query);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore Blogs</title>
     
-    <link rel="stylesheet" href="./authors/css/style.css">
+    <link rel="stylesheet" href="./css/styl.css">
 
 
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-    <style>
-    section.post {   
-    margin-top: 8rem;
-}
-.post_container{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 2rem;
-    margin-bottom: 5rem;
-} 
-.post_thumbnail{
-    border-radius: 5rem;
-    border: 1rem solid #2c3333;
-    overflow: hidden;
-    margin-bottom: 1.6rem; 
-}
-
-.post_author{
-    display: flex;
-    gap: 1rem;
-    margin-top: 1.2rem;
-}
-    .expcontainer{
-    width:40%;
-    padding:1.5rem 2rem;
-    
-}
-.expcontainer{
-    margin-top:10rem;
-margin-left:auto;
-margin-right:auto;
-background-color: #2c3333;
-border-radius:1.5rem;
-
-}
-
-
-    </style>
 
 </head>
 <body>

@@ -11,47 +11,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore Blogs</title>
     
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/styl.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
 
-        .blogs{
-            margin-top:10%;
-            
-        }
-        table {
-            border:2px solid red;
-            margin-left:auto;
-            margin-right:auto;
-        }
-        th {
-            border:2px solid red;
-            width:5rem;
-            height: 10px;
-            background: grey;
-            color:black;
-            margin:1rem;
-            padding:1rem;
-        }
-        td{
-            border:2px solid red;
-            width:5rem;
-            height:20px;
-            margin:2rem;
-            padding:2rem;
-        }
-        button.edit {
-            background:green;
-            color:white;
-            width:5rem;
-            height:20px;
-        }
-        button.delete {
-            background:red;
-            color:white;
-            width:5rem;
-            height:20px;
-        }
+
     </style>
 </head>
 <body>

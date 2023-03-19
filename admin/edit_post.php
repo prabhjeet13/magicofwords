@@ -45,13 +45,8 @@ $row = mysqli_fetch_array($result);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore Blogs</title>
     
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/styl.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <style>
-        .form_section-conainer {
-            margin-top: 9%;
-        }
-    </style>
 </head>
 <body>
     <nav>
@@ -71,8 +66,8 @@ $row = mysqli_fetch_array($result);
             </ul>
         </div>
     </nav>
-    <section class="form_section-conainer">
-        <div class="container form_section-conainer">
+    <section class="form_section-container">
+        <div class="container form_section-container">
             <h2>Edit Post</h2>
 
             <form action="" method="post">

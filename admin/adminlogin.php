@@ -26,14 +26,14 @@ if(isset($_POST['submit'])){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore Blogs</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/styl.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 </head>
 <body>
-    <section class="form_section-conainer">
-        <div class="container form_section-conainer">
+    <section class="form_section-container">
+        <div class="container form_section-container">
             <form action="" method="post">
             <h2>Admin Log In!</h2>
             <?php

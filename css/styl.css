@@ -1,0 +1,400 @@
+*{
+    margin:0;
+    padding:0;
+    outline:0;
+    border:0;
+    appearance: 0;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #cbe4de;
+    overflow-x: hidden;
+    background: #0e8388;
+    font-size: 0.9rem;
+}
+
+section{
+    margin-top: 3rem;
+    width: 100vw;
+}
+
+h1,h2,h3,h4,h5{
+    color: white;
+    line-height: 1.3;
+}
+
+
+h1{
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+h2{
+    font-size: 1.7rem;
+    margin: 1rem 0;
+}
+h3{
+    font-size: 1.1rem;
+    margin: 1rem 0;
+}
+h4{
+    font-size: 1rem;
+}
+
+a{
+    color:white;
+    transition: all 300ms ease;
+}
+
+img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+/* NAV BAR OF MAGIC OF WORDS */
+nav{
+    background: #2e4f4f;
+    width: 100vw;
+    height: 4.5rem;
+    position:fixed;
+    top: 0;
+    z-index: 20;
+    box-shadow: 0 1rem 1rem rgba(0,0,0,0.8);
+}
+
+.nav_container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_logo{
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.nav_items{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.nav_profile{
+    position: relative;
+    cursor: pointer;
+}
+
+.nav_profile ul {
+    position: absolute;
+    top: 90%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 3rem 3rem rgba(0,0,0,0.4);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 300ms ease;
+}
+
+.nav_profile:hover > ul{
+    box-shadow: 0 0.5rem 1rem black;
+    visibility: visible;
+    opacity: 2;
+
+}
+
+.nav_profile ul li a {
+    padding: 1rem;
+    background: #2c3333;
+    display: block;
+    width: 100%;
+}
+
+.nav_profile ul li:last-child a {
+    background: #2c3333;
+    color: white;
+} 
+/* NAV BAR END*/
+
+
+/* ABOUT US SECTION */
+
+section.aboutus .about {
+    margin: 12%;
+}
+
+section.aboutus .container {
+    width: 40%;
+}
+
+section.aboutus .container p {
+    font-size: large;
+    font-style:oblique;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+/* ABOUT US SECTION END */
+
+
+/* CONTACT US SECTION */
+section.contact .over {
+    margin: 6%;
+   
+}
+
+section.contact .over .container {
+    width: 30%;
+}
+
+section.contact form input, section.contact form textarea {
+    display: block;
+    width: 100%;
+    margin:0.2rem 0;
+    padding:1.0rem;
+    border-radius: 20px;
+    border:  2px solid white;  
+} 
+
+
+.contactsubmit {
+    font-size: 1.0rem;
+    display: inline-block;
+    margin: 2rem 0;
+    transition: all 300ms ease;
+} 
+
+section.contact form .contactbtn {
+    width: 15rem;
+    margin: 0.5rem auto;
+    background: #2e4f4f;
+    color: aliceblue;
+}
+.contactsubmit:hover {
+    box-shadow: 0 1rem 1rem #525252;               
+}
+/* CONTACT US SECTION END */
+
+/* EXPLORE SECTION */
+.expcontainer{
+    width:40%;
+    padding:1.5rem 2rem;
+    
+}
+.expcontainer{
+    margin-top:10rem;
+margin-left:auto;
+margin-right:auto;
+background-color: #2c3333;
+border-radius:1.5rem;
+
+}
+/* EXPLORE SECTION END */
+
+/* POST APPEARS VALA DIV ON EXPLORE PAGE AND INDEX PAGE*/
+section.post {   
+    margin-top: 8rem;
+}
+.post_container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    margin-bottom: 5rem;
+} 
+.post_thumbnail{
+    border-radius: 5rem;
+    border: 1rem solid #2c3333;
+    overflow: hidden;
+    margin-bottom: 1.6rem; 
+}
+
+.post_author{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.2rem;
+}
+
+/* POST APPEARS VALA DIV ON EXPLORE PAGE AND INDEX PAGE END */
+
+/* USE IN LOGIN REGISTER DIV_APPEAR VALE MAI*/
+.container{
+    width: 75%;
+    max-width: 1800px;
+    margin-inline: auto;
+}
+
+/* FORM OF LOGIN , REGISTER ,  ADD POST , EDIT POST */
+.form_section-container{
+    display: grid;
+    place-items:center;
+    height:100%;
+    width:40%;
+
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+    border-radius: 50px;
+}
+
+.form_control {
+    display:flex;
+    flex-direction:column;
+    gap:0.6rem;
+}
+
+.form_control.inline {
+    flex-direction:row;
+    align-items:center;
+}
+
+input , select {
+    padding:0.8rem 1.4rem;
+    background: white;
+    border-radius:1rem;
+    resize:none;
+    width: 100%;
+}
+
+.form_section-container small {
+    margin-top:1rem;
+    display:block;
+}
+
+.form_section-container small a {
+     color: #ecebf4;
+
+}
+
+/* FORM OF LOGIN , REGISTER ,  ADD POST END*/
+
+/* MW BUTTON */
+.btn {
+    padding: 0.4rem 1.6rem;
+    font-size: 1.3rem ;
+    border-radius: 50%;
+    display :inline-block;
+    margin: 2rem 0;
+    transition: all 300ms ease;
+}
+
+.btn-primary {
+    background: #617143;
+    color: white;
+}
+
+.btn:hover{
+    box-shadow: 0 1rem 1rem #525252;
+}
+
+/* MW BUTTON END */
+
+/* BUTTON USED IN SIGN SIGNUP ADD_POST FORMS*/
+
+.signupbtn{
+    display:inline-block;
+    width:fit-content;
+    padding:0.6rem 1.2rem;
+    background-color:#617143;
+    border-radius:1rem;
+    cursor:pointer;
+    transition:all 300ms ease;
+ 
+}
+
+/* BUTTON USED IN SIGN SIGNUP ADD_POST FORMS END */
+
+
+/* DASHBOARD for divide in two sections AT AFTER ADMIN LOGIN AND AFTER USER LOGIN */
+.dashboard{
+    margin-top:10rem;
+}
+.dashboard_container{
+    width:75%;
+    display:grid;
+    grid-template-columns:14rem auto;
+    gap:1rem;
+    background-color: rgba(242,242,254,0.3);
+    padding:2rem;
+    margin-bottom:5rem;
+
+}
+.dashboard aside a{
+    margin-top:1.0rem;
+    background-color: #2e4f4f;
+    display:flex;
+    gap:1rem;
+    align-items:center;
+    padding:1rem;
+
+}
+.dashboard aside ul li:not(last-child) a{
+    border-bottom: 1px solid gray;
+
+}
+.dashboard aside a:hover{
+    background-color: hsl(156,100%,38%,15%) ;
+}
+.dashboard aside a.active{
+   background-color: #2e4f4f;
+}
+.dashboard main{
+    margin-left:1.5rem;
+}
+.dashboard main h2{
+    margin:0.2 2rem 0;
+   line-height:1;
+}  
+
+/* DASHBOARD  AT AFTER ADMIN LOGIN AND AFTER USER LOGIN END */
+
+
+/* UPDATE PAGE VALA TABLE */
+.blogs{
+    margin-top:10%;
+    
+}
+table {
+    border:2px solid red;
+    margin-left:auto;
+    margin-right:auto;
+}
+th {
+    border:2px solid red;
+    width:5rem;
+    height: 10px;
+    background: grey;
+    color:black;
+    margin:1rem;
+    padding:1rem;
+}
+td{
+    border:2px solid red;
+    width:5rem;
+    height:20px;
+    margin:1rem;
+    padding:1rem;
+}
+button.edit {
+    background:green;
+    color:white;
+    width:5rem;
+    height:20px;
+}
+button.delete {
+    background:red;
+    color:white;
+    width:5rem;
+    height:20px;
+}
+/*UPDATE PAGE VALA TABLE END*/
+
+/*  */
+
+/*  */

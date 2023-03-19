@@ -16,13 +16,8 @@ $run = mysqli_query($conn,$query);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore Blogs</title>
     
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/styl.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <style>
-        .form_section-conainer {
-            margin-top: 9%;
-        }
-    </style>
 </head>
 <body>
     <nav>
@@ -42,8 +37,8 @@ $run = mysqli_query($conn,$query);
             </ul>
         </div>
     </nav>
-    <section class="form_section-conainer">
-        <div class="container form_section-conainer">
+    <section class="form_section-container">
+        <div class="container form_section-container">
             <h2>Add Post</h2>
                 <?php 
                     if(isset($_SESSION['status']) && $_SESSION != ' ')
@@ -75,27 +70,15 @@ $run = mysqli_query($conn,$query);
                         <input type="file" name="postfile" required>
                     </div>
                     <input type="email" name="email" placeholder="email" required>
-                    <!-- <label for="thumbnail">Date of post</label>
-                    <input type="date" name= "datepost"> -->
                     
                     <input type="submit" name="submit" class="signupbtn" value="ADD POST to MW">
                     </form>
 
         </div>
     </section>
-    <section class="category_button">
-        <div class="container category_button-container">
-            <a href="" class="category_button">Art</a>
-            <a href="" class="category_button">Nature</a>
-            <a href="" class="category_button">Animal</a>
-            <a href="" class="category_button">Journal</a>
-            <a href="" class="category_button">Travel</a>
-            <a href="" class="category_button">Science & Technology</a>
-        </div>                         
-    </section>
 
 
-    <!-- end category -->
+
 
     <footer>
         <div class="footer_copyright">

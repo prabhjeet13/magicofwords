@@ -12,36 +12,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore Blogs</title>
     
-    <link rel="stylesheet" href="./authors/css/style.css">
+    <link rel="stylesheet" href="./css/styl.css">
 
 
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<style>
-    section.post {   
-    margin-top: 8rem;
-}
-.post_container{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 2rem;
-    margin-bottom: 5rem;
-} 
-.post_thumbnail{
-    border-radius: 5rem;
-    border: 1rem solid #2c3333;
-    overflow: hidden;
-    margin-bottom: 1.6rem; 
-}
-
-.post_author{
-    display: flex;
-    gap: 1rem;
-    margin-top: 1.2rem;
-}
-
-    </style>
 </head>
 <body>
     <nav>
@@ -87,19 +63,6 @@
         </section>
 <!-- end post -->
 
-    <section class="category_button">
-        <div class="container category_button-container">
-            <a href="" class="category_button">Art</a>
-            <a href="" class="category_button">Nature</a>
-            <a href="" class="category_button">Animal</a>
-            <a href="" class="category_button">Journal</a>
-            <a href="" class="category_button">Travel</a>
-            <a href="" class="category_button">Science & Technology</a>
-        </div>                         
-    </section>
-
-
-    <!-- end category -->
 
     <footer>
         <div class="footer_copyright">

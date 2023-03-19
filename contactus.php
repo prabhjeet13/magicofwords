@@ -5,52 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore Blogs</title>
-    <link rel="stylesheet" href="./authors/css/style.css">
+    <link rel="stylesheet" href="./css/styl.css">
 
     
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
- <style>   
-    section.contact .over {
-        margin: 6%;
-       
-    }
-    
-    section.contact .over .container {
-        width: 30%;
-    }
-    
-    section.contact form input, section.contact form textarea {
-        display: block;
-        width: 100%;
-        margin:0.2rem 0;
-        padding:1.0rem;
-        border-radius: 20px;
-        /* background: transparent; */
-        border:  2px solid white;  
-    } 
-    
-    /* section.contact form input::placeholder, section.contact form textarea::placeholder {
-        color: white;
-    } */
-    .contactsubmit {
-        font-size: 1.0rem;
-        display: inline-block;
-        margin: 2rem 0;
-        transition: all 300ms ease;
-    } 
-    
-    section.contact form .contactbtn {
-        width: 15rem;
-        margin: 0.5rem auto;
-        background: #2e4f4f;
-        color: aliceblue;
-    }
-    .contactsubmit:hover {
-        box-shadow: 0 1rem 1rem #525252;               
-    }
-
-</style>
 </head>
 <body>
 <!-- navbar -->
