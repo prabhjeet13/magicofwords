@@ -62,8 +62,8 @@
                     <td><?php echo $row["title"]; ?> </td>
                     <td><?php echo $row["category"]; ?> </td>
                     <td><?php echo $row["authorname"]; ?> </td>
-                    <td><a href="edit_post.php?postid=<?php echo $row["postid"];?>"><button class="edit">EDIT</button></td>
-                    <td><a href="delete_post.php?postid=<?php echo $row["postid"];?>"><button class="delete">DELETE</button></td>
+                    <td><a href="edit_post.php?postid=<?php echo $row["postid"];?>"><button class="edit">Edit</button></td>
+                    <td><a href="delete_post.php?postid=<?php echo $row["postid"];?>"><button class="delete">Delete</button></td>
                 </tr>
                 <?php } ?>
             </table>

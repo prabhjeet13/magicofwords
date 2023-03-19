@@ -15,9 +15,11 @@
     <link rel="stylesheet" href="./css/styl.css">
 
 
+
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <nav>
@@ -40,9 +42,9 @@
                 ?>
             <div class="container post_container">
                 <article class="post">
-                    <div class="post_thumbnail">
-                        <img src="./admin/upload/<?php echo $row["postimage"]; ?>">
-                    </div>  
+                        <div class="post_thumbnail">
+                            <img src="./admin/upload/<?php echo $row["postimage"]; ?>">
+                        </div>  
                     <div class="post_info">
                         <a href="" class="category_button"> <?php echo $row["category"];  ?> </a>
                         <h3 class="post_title">

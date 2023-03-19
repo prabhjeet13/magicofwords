@@ -15,7 +15,8 @@ body{
     color: #cbe4de;
     overflow-x: hidden;
     background: #0e8388;
-    font-size: 0.9rem;
+    font-size: 1rem;
+
 }
 
 section{
@@ -53,13 +54,13 @@ a{
 img{
     display: block;
     width: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 /* NAV BAR OF MAGIC OF WORDS */
 nav{
     background: #2e4f4f;
     width: 100vw;
-    height: 4.5rem;
+    height: 4rem;
     position:fixed;
     top: 0;
     z-index: 20;
@@ -70,7 +71,7 @@ nav{
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-between;
 }
 
 .nav_logo{
@@ -113,14 +114,22 @@ nav{
     background: #2c3333;
     display: block;
     width: 100%;
+
 }
 
 .nav_profile ul li:last-child a {
     background: #2c3333;
     color: white;
 } 
-/* NAV BAR END*/
 
+/* NAV BAR END*/
+/* ----footer */
+
+.footer_copyright{
+    text-align: center;
+    color:black;
+
+}
 
 /* ABOUT US SECTION */
 
@@ -187,10 +196,10 @@ section.contact form .contactbtn {
 }
 .expcontainer{
     margin-top:10rem;
-margin-left:auto;
-margin-right:auto;
-background-color: #2c3333;
-border-radius:1.5rem;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: #2c3333;
+    border-radius:1.5rem;
 
 }
 /* EXPLORE SECTION END */
@@ -200,13 +209,14 @@ section.post {
     margin-top: 8rem;
 }
 .post_container{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+    
     gap: 2rem;
     margin-bottom: 5rem;
 } 
 .post_thumbnail{
-    border-radius: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5rem 0 ;
     border: 1rem solid #2c3333;
     overflow: hidden;
     margin-bottom: 1.6rem; 
@@ -222,18 +232,33 @@ section.post {
 
 /* USE IN LOGIN REGISTER DIV_APPEAR VALE MAI*/
 .container{
-    width: 75%;
+    width: 55%;   /*index page change*/
     max-width: 1800px;
     margin-inline: auto;
 }
 
 /* FORM OF LOGIN , REGISTER ,  ADD POST , EDIT POST */
-.form_section-container{
+.form_section{
     display: grid;
     place-items:center;
     height:100%;
-    width:40%;
+}
 
+.form_section-container{
+    margin-top:5rem;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: #2c3333;
+    border-radius:1.5rem;
+
+}
+
+
+.form_section-container{  
+    margin-left: auto;
+    margin-right: auto;  
+    width:50%;
+    margin-top: 6rem;
 }
 
 form{
@@ -254,12 +279,13 @@ form{
     align-items:center;
 }
 
-input , select {
+input ,textarea, select {
     padding:0.8rem 1.4rem;
     background: white;
     border-radius:1rem;
     resize:none;
     width: 100%;
+    color: black;
 }
 
 .form_section-container small {
@@ -285,8 +311,8 @@ input , select {
 }
 
 .btn-primary {
-    background: #617143;
-    color: white;
+    background: #0c9ca1;
+    color:black;
 }
 
 .btn:hover{
@@ -301,7 +327,7 @@ input , select {
     display:inline-block;
     width:fit-content;
     padding:0.6rem 1.2rem;
-    background-color:#617143;
+    background-color:#16FF00;
     border-radius:1rem;
     cursor:pointer;
     transition:all 300ms ease;
@@ -361,40 +387,49 @@ input , select {
     
 }
 table {
-    border:2px solid red;
+    border:2px solid #2D2727;
     margin-left:auto;
     margin-right:auto;
 }
-th {
-    border:2px solid red;
-    width:5rem;
-    height: 10px;
-    background: grey;
-    color:black;
-    margin:1rem;
-    padding:1rem;
-}
-td{
-    border:2px solid red;
-    width:5rem;
-    height:20px;
-    margin:1rem;
-    padding:1rem;
-}
-button.edit {
-    background:green;
+
+.edit {
+    border-radius:2rem;
+    background-color:green;
     color:white;
     width:5rem;
     height:20px;
+    display: inline-block;
+    cursor:pointer;
+    transition: all 300ms ease;
 }
-button.delete {
-    background:red;
+.delete {
+
+    border-radius: 2rem;
+    background-color:red;
     color:white;
     width:5rem;
     height:20px;
-}
+    display: inline-block;
+    cursor:pointer;
+    transition: all 300ms ease;
+} 
 /*UPDATE PAGE VALA TABLE END*/
 
-/*  */
+/* table css */
 
-/*  */
+.blogs-table th{
+    background-color: #2e4f4f;
+    padding :0.8rem;
+    color:white;
+}
+.blogs-table td{
+    padding:0.8rem;
+    border-bottom: 1px solid gray;
+}
+.blogs-table tr:hover td{
+    background-color: #2e4f4f;
+    color:white;
+    cursor:default;
+    transition: all 300ms ease;
+
+}
